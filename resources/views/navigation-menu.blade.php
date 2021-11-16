@@ -31,6 +31,10 @@
                         {{ __('Seguimiento a Alumnos & Maestros') }}
                     </x-jet-nav-link>
                     @endif
+
+                    <x-jet-nav-link href="{{ route('qr') }}" :active="request()->routeIs('qr')">
+                        {{ __('Codigo QR') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 

@@ -33,6 +33,9 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/prevencion', function () 
     return view('prevencion');
 })->name('prevencion');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/qr-code', function () {
+    return view('qr');
+})->name('qr');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
